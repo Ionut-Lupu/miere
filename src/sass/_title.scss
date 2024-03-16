@@ -1,0 +1,47 @@
+:root {
+  --active-link: #2196f3;
+  --color-menu: #ecdcab;
+  --color-title: #fcfcf7;
+  --border-bottom-curent: #bf932a;
+  --hover-menu-btn: #9e6200;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --font-hand: 'Dancing Script';
+}
+
+/* Title section */
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url(/src/images/bees-hive-beehive.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-ct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.semi-title {
+  color: var(--color-title);
+  font-family: var(--font-hand);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.title {
+  color: var(--color-title);
+  font-family: var(--font-hand);
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.activity {
+  color: var(--color-title);
+  font-family: var(--font-hand);
+  font-size: 20px;
+  font-weight: 400;
+}
