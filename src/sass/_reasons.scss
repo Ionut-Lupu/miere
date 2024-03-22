@@ -1,0 +1,142 @@
+:root {
+  --active-link: #2196f3;
+  --color-menu: #ecdcab;
+  --color-title: #fcfcf7;
+  --border-bottom-curent: #bf932a;
+  --hover-menu-btn: #9e6200;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --font-hand: "Dancing Script";
+}
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+.title-reasons {
+  color: var(--color-title);
+  font-family: var(--font-hand);
+  font-size: 35px;
+  backdrop-filter: blur(1px);
+}
+
+.reason-section {
+  height: 500px;
+}
+
+.reason-ct {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ background-image: linear-gradient(to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(/src/images/Straight-from-the-hive.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+  // font-family: var();
+}
+
+.accordion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 25px;
+  transition: 0.3s;
+}
+
+.accordion:hover {
+gap: 60;
+}
+
+.accordion h3 {
+  font-family: var(--font-hand);
+font-weight: 400;
+font-size: 30px;
+line-height: 25px;
+border-bottom: 2px solid var(--color-menu);
+white-space: nowrap;
+}
+
+.accordion p {
+font-family: var(--font-hand);
+font-size: 25px;
+}
+
+.accordion li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 80px;
+  border-radius: 50px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.accordion li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.accordion li,
+.accordion li img .accordion li .content span {
+  transition: 0.3s;
+}
+
+.accordion li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 15x;
+  background-color: #02022e;
+  background: linear-gradient(0deg, rgb(0 0 0 / 70%) 100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accordion li .content span {
+  position: absolute;
+  z-index: 3;
+  left: 20%;
+  bottom: 20px;
+  translate: -300px 0;
+  visibility: hidden;
+  opacity: 0;
+  backdrop-filter: blur(1px);
+}
+
+.accordion li:hover {
+  flex: 0 1 460px;
+  scale: 1.2;
+  z-index: 10;
+  opacity: 1;
+  
+}
+
+.accordion li:hover .content {
+  opacity: 1;
+  visibility: visible;
+  background-image: linear-gradient(to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4));
+}
+
+.accordion li:hover span {
+  translate: -50 0;
+  opacity: 1;
+  visibility: visible;
+}
+
