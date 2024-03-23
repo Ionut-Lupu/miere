@@ -1,57 +1,93 @@
+:root {
+    --active-link: #2196f3;
+    --color-menu: #ecdcab;
+    --color-title: #fcfcf7;
+    --border-bottom-curent: #bf932a;
+    --hover-menu-btn: #9e6200;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --font-hand: 'Dancing Script';
+}
+
 // desktop
 // @media screen and (min-width: 1158px) {}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer {
-    height: 400px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-image: url(/src/images/bee-black-background.jpg);
-    background-position: center;
-    background-size: cover;
+  height: 400px;
+  width: 100vw;
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
+  background-image: url(/src/images/bee-black-background-opt.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .footer-ct {
-    width: 1400px;
-    display: flex;
-    justify-content: space-between;
+  width: 1400px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-adress-footer-ct {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .adress-footer {
-    color: var(--color-title);
+  color: var(--color-title);
 }
 
 .adress-footer-ct {
-    display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone-foooter {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ecdcab;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ecdcab;
 }
 
 .social-media-footer-ct {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .find-us {
-    color: var(--color-title);
+  color: var(--color-title);
+  font-family: var(--font-hand);
+  font-size: 35px;
 }
 
 .face-icon-ft,
 .insta-icon-ft {
-    fill: #fcfcf7;
-    width: 50px;
+  fill: #fcfcf7;
+  width: 50px;
+  height: 50px;
+}
+
+.social-media-footer-ct {
+  display: flex;
+  flex-direction: column;
+justify-content: flex-end;
+
+}
+
+.icon-socialmedia-footer-ct {
+  width: 200px;
+padding-top: 20px;
+  display: flex;
+justify-content: space-around;
 }
 
 // @media screen and (min-width: 1158px) {
@@ -59,7 +95,9 @@ footer {
 // }
 
 //tablet @media screen and (min-width: 768px) and (max-width: 1157px)
-@media screen and (max-width: 1157px) {}
+@media screen and (max-width: 1157px) {
+}
 
 /*mobile*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+}
