@@ -9,7 +9,50 @@ a {
     text-decoration: none;
 }
 
+footer {
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: url(/src/images/bee-black-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
+.footer-ct {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adress-footer {
+    color: var(--color-title);
+}
+
+.adress-footer-ct {
+    display: flex;
+}
+
+.phone-foooter {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ecdcab;
+}
+
+.social-media-footer-ct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-us {
+    color: var(--color-title);
+}
+
+.face-icon-ft,
+.insta-icon-ft {
+    fill: #fcfcf7;
+    width: 50px;
+}
 
 // @media screen and (min-width: 1158px) {
 
