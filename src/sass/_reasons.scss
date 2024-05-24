@@ -37,16 +37,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(/src/images/honey-in-a-jaar.jpg);
-  background-attachment: fixed;
-  background-position: center;
+  // background-image: linear-gradient(
+  //     to bottom,
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url(/src/images/honey-in-a-jaar.jpg);
+  // background-attachment: fixed;
+  // background-position: center;
   // background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  background: rgb(252, 176, 69);
+  background: radial-gradient(
+    circle,
+    rgba(252, 176, 69, 1) 5%,
+    rgba(237, 79, 6, 1) 49%,
+    rgba(50, 33, 33, 1) 97%
+  );
 }
 
 .accordion {
@@ -178,15 +185,12 @@
   }
 
   .accordion li:hover span {
-  padding: 30px;
+    padding: 30px;
   }
 }
 
 /*mobile*/
 @media screen and (max-width: 767px) {
-
-  
-
   .accordion:hover {
     gap: 35px;
   }
@@ -196,7 +200,7 @@
     scale: 1;
   }
 
-    .accordion li:hover span {
-      padding: 15px;
-    }
+  .accordion li:hover span {
+    padding: 15px;
+  }
 }
